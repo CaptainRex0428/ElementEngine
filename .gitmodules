@@ -17,3 +17,7 @@
 	path = Dependencies/harfbuzz
 	url = https://github.com/libsdl-org/harfbuzz.git
 	branch = 8.1.1-SDL
+[submodule "Dependencies/SDL_ttf"]
+	path = Dependencies/SDL_ttf
+	url = https://github.com/libsdl-org/SDL_ttf.git
+	branch = SDL2
