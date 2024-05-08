@@ -15,7 +15,9 @@ DepIncludeDir["harfbuzz"] = "%{wks.location}/Dependencies/harfbuzz/src"
 DepIncludeDir["SDL_ttf"] = "%{wks.location}/Dependencies/SDL_ttf"
 
 ProjIncludeDir={}
-ProjIncludeDir["Engine"] = "%{wks.location}/Engine/include"
+ProjIncludeDir["ElementExtend"] = "%{wks.location}/ElementExtend/include"
+
+ProjIncludeDir["ElementEditor"] = "%{wks.location}/ElementEditor/include"
 
 LibraryDir = {}
 

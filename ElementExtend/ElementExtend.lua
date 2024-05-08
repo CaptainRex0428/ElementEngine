@@ -1,5 +1,5 @@
-project "Engine"
-    kind "SharedLib"
+project "ElementExtend"
+    kind "StaticLib"
     language "C++"
     cppdialect "C++20"
 
@@ -19,7 +19,6 @@ project "Engine"
 
     defines
 	{
-        "ENGINE_DLL_EXPORT"
 	}
 
     flags
@@ -41,15 +40,10 @@ project "Engine"
     -- inlining    "Explicit"
 	-- intrinsics  "Off"
 
-    postbuildcommands
-	{
-		("{COPY} %{cfg.buildtarget.relpath} "..DynamicDir)
-	}
-
     filter "system:windows" 
-        staticruntime "Off"
+        -- staticruntime "Off"
         systemversion "latest"
-        defines { "_WINDOWS" }
+        defines { "_WINDOWS","ELEMENT_PLATFORM_WINDOWS" }
 
     filter "configurations:Debug"
         runtime "Debug"

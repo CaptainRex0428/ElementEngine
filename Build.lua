@@ -1,9 +1,9 @@
 include "Dependencies.lua"
 include "Directory.lua"
 
-workspace "ProjectDefault"
+workspace "ElementEngine"
 	architecture "x64"
-	startproject "App"
+	startproject "ElementEngine"
 	configurations{
 		"Debug",
 		"Release",
@@ -14,12 +14,12 @@ workspace "ProjectDefault"
     buildoptions { "/EHsc", "/Zc:preprocessor", "/Zc:__cplusplus" }
 	
 group "Engine"
-	include "Engine/Engine_Dll.lua"
-	include "EngineCore/EngineCore_Lib.lua"
-
-group "Sandbox"
-	include "EngineSandbox/EngineSandbox_EXE.lua"
-
+	include "ElementEngine/ElementEngine.lua"
+group "Engine/Component"
+	include "ElementExtend/ElementExtend.lua"
+	include "ElementEditor/ElementEditor.lua"
+	include "ElementRuntime/ElementRuntime.lua"
+	
 group "Dependencies"
 	include "Dependencies/SDL2/SDL2.lua"
 	include "Dependencies/SDL_image/SDL_image.lua"

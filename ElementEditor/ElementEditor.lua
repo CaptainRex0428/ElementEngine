@@ -1,5 +1,5 @@
-project "EngineCore"
-    kind "StaticLib"
+project "ElementEditor"
+    kind "SharedLib"
     language "C++"
     cppdialect "C++20"
 
@@ -19,6 +19,7 @@ project "EngineCore"
 
     defines
 	{
+        "ELEMENT_EDITOR_DLL_EXPORT"
 	}
 
     flags
@@ -40,10 +41,15 @@ project "EngineCore"
     -- inlining    "Explicit"
 	-- intrinsics  "Off"
 
+    postbuildcommands
+	{
+		("{COPY} %{cfg.buildtarget.relpath} "..DynamicDir)
+	}
+
     filter "system:windows" 
-        -- staticruntime "Off"
+        staticruntime "Off"
         systemversion "latest"
-        defines { "_WINDOWS" }
+        defines { "_WINDOWS","ELEMENT_PLATFORM_WINDOWS" }
 
     filter "configurations:Debug"
         runtime "Debug"

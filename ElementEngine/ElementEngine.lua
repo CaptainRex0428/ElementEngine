@@ -1,4 +1,4 @@
-project "EngineSandbox"
+project "ElementEngine"
     kind "ConsoleApp"
     language "C++"
     cppdialect "C++20"
@@ -11,12 +11,12 @@ project "EngineSandbox"
     includedirs
     {
         "include",
-        "%{ProjIncludeDir.Engine}"
+        "%{ProjIncludeDir.ElementEditor}"
     }
 
     links
     {
-        "Engine"
+        "ElementEditor"
     }
 
     defines
@@ -45,7 +45,7 @@ project "EngineSandbox"
     filter "system:windows" 
         -- staticruntime "Off"
         systemversion "latest"
-        defines { "_WINDOWS" }
+        defines { "_WINDOWS","ELEMENT_PLATFORM_WINDOWS" }
 
     filter "configurations:Debug"
         runtime "Debug"
