@@ -30,7 +30,7 @@ group "Dependencies"
 	include "Dependencies/zlib/zlib.lua"
 
 	include "Dependencies/dlg/dlg.lua"
-	include "Dependencies/freetype/freetype.lua"
+	include "Dependencies/freetype.lua"
 	include "Dependencies/harfbuzz/harfbuzz.lua"
 	include "Dependencies/SDL_ttf/SDL_ttf.lua"
 
