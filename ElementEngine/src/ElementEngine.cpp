@@ -1,4 +1,3 @@
-
 #include "ElementEditor.h"
 
 #include <iostream>

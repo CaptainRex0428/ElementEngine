@@ -1,27 +1,25 @@
-project "ElementEditor"
-    kind "SharedLib"
+project "libScrewExtend"
+    kind "StaticLib"
     language "C++"
     cppdialect "C++20"
 
     files
     {
-        "src/**.cpp","include/**.h"
+        "ScrewExtend/src/**.cpp",
+        "ScrewExtend/include/**.h"
     }
 
     includedirs
     {
-        "include",
-        "%{ProjIncludeDir.libScrewExtend}"
+        "ScrewExtend/include"
     }
 
     links
     {
-        "libScrewExtend"
     }
 
     defines
 	{
-        "ELEMENT_EDITOR_DLL_EXPORT"
 	}
 
     flags
@@ -34,7 +32,7 @@ project "ElementEditor"
 
     buildoptions { "/EHsc", "/Zc:preprocessor", "/Zc:__cplusplus"}
 
-    -- warnings "off"
+    warnings "off"
 
     location (LocationDir)
     targetdir (TargetDir)
@@ -43,15 +41,10 @@ project "ElementEditor"
     -- inlining    "Explicit"
 	-- intrinsics  "Off"
 
-    postbuildcommands
-	{
-		("{COPY} %{cfg.buildtarget.relpath} "..DynamicDir)
-	}
-
     filter "system:windows" 
-        staticruntime "Off"
+        -- staticruntime "Off"
         systemversion "latest"
-        defines { "_WINDOWS","ELEMENT_PLATFORM_WINDOWS" }
+        defines { "_WINDOWS","_WIN64" }
 
     filter "configurations:Debug"
         runtime "Debug"

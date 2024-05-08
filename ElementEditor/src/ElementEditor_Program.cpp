@@ -1,5 +1,7 @@
 #include "ElementEditor_Program.h"
 
+#include "test.h"
+
 namespace Element
 {
 	ElementEditor::ElementEditor()
@@ -12,9 +14,6 @@ namespace Element
 
 	void ElementEditor::Run()
 	{
-		while (true)
-		{
-
-		}
+		ScrewExtend::Print();
 	}
 }
