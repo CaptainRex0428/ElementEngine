@@ -10,3 +10,6 @@
 [submodule "Dependencies/dlg"]
 	path = Dependencies/dlg
 	url = https://github.com/nyorain/dlg.git
+[submodule "Dependencies/imgui"]
+	path = Dependencies/imgui
+	url = https://github.com/ocornut/imgui.git
