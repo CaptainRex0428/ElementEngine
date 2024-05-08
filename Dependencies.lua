@@ -20,6 +20,7 @@ ProjIncludeDir={}
 ProjIncludeDir["ElementEditor"] = "%{wks.location}/ElementEditor/include"
 ProjIncludeDir["ElementRuntime"] = "%{wks.location}/ElementRuntime/include"
 ProjIncludeDir["libScrewExtend"] = "%{wks.location}/Extend/ScrewExtend/include"
+ProjIncludeDir["ScrewExtend"] = "%{wks.location}/Extend/ScrewExtend/include"
 
 LibraryDir = {}
 

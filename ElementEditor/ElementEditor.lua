@@ -11,12 +11,12 @@ project "ElementEditor"
     includedirs
     {
         "include",
-        "%{ProjIncludeDir.libScrewExtend}"
+        "%{ProjIncludeDir.ScrewExtend}"
     }
 
     links
     {
-        "libScrewExtend"
+        "ScrewExtend.dll"
     }
 
     defines

@@ -1,5 +1,5 @@
 project "spdlog"
-    kind "SharedLib"
+    kind "StaticLib"
     language "C++"
     cppdialect "C++20"
 
@@ -41,10 +41,10 @@ project "spdlog"
     -- inlining    "Explicit"
 	-- intrinsics  "Off"
 
-    postbuildcommands
-	{
-		("{COPY} %{cfg.buildtarget.relpath} "..DynamicDir)
-	}
+    -- postbuildcommands
+	-- {
+		-- ("{COPY} %{cfg.buildtarget.relpath} "..DynamicDir)
+	-- }
 
     filter "system:windows" 
         staticruntime "Off"
