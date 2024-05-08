@@ -14,6 +14,8 @@ DepIncludeDir["freetype"] = "%{wks.location}/Dependencies/freetype/include"
 DepIncludeDir["harfbuzz"] = "%{wks.location}/Dependencies/harfbuzz/src"
 DepIncludeDir["SDL_ttf"] = "%{wks.location}/Dependencies/SDL_ttf"
 
+DepIncludeDir["spdlog"] = "%{wks.location}/Dependencies/spdlog/include"
+
 ProjIncludeDir={}
 ProjIncludeDir["ElementExtend"] = "%{wks.location}/ElementExtend/include"
 
