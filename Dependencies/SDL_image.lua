@@ -20,7 +20,7 @@ project "SDL_image"
 	links
 	{
 		"SDL",
-		"SDLmain",
+		"SDL_main",
 		"libpng"
 	}
 

@@ -17,7 +17,7 @@ project "showfont"
     links
     {
         "SDL",
-		"SDLmain",
+		"SDL_main",
         "SDL_ttf"
     }
 
@@ -86,7 +86,7 @@ project "glfont"
     links
     {
         "SDL",
-		"SDLmain",
+		"SDL_main",
         "SDL_ttf",
         "OpenGL32.lib"
     }

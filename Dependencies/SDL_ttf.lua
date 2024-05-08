@@ -21,7 +21,7 @@ project "SDL_ttf"
         "freetype",
         "harfbuzz",
         "SDL",
-		"SDLmain"
+		"SDL_main"
     }
 
     defines

@@ -482,7 +482,7 @@ project "SDL"
 		optimize      "On"
 
 
-project "SDLmain"
+project "SDL_main"
 	kind          "StaticLib"
 	language      "C"
 	

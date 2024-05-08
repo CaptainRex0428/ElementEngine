@@ -15,7 +15,7 @@ project "showimage"
    links
    {
       "SDL",
-      "SDLmain",
+      "SDL_main",
 	  "SDL_image"
    }
 
@@ -61,7 +61,7 @@ project "showanim"
 	   links
 	   {
 		  "SDL",
-		  "SDLmain",
+		  "SDL_main",
 		  "SDL_image"
 	   }
 	
