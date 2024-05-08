@@ -5,12 +5,12 @@ project "dlg_example"
 
 	includedirs      
     {
-        "include"
+        "dlg/include"
     }
 
 	files 
 	{
-		"docs/examples/example.cpp"		
+		"dlg/docs/examples/example.cpp"		
 	}
 
 	links
@@ -27,21 +27,21 @@ project "dlg_example"
 
 	filter "system:windows"
         systemversion "latest"
-        defines { "WINDOWS" }
+        defines { "_WINDOWS" }
 
     filter "configurations:Debug"
         runtime "Debug"
         symbols "On"
-        defines { "DEBUG" }
+        defines { "_DEBUG" }
 
     filter "configurations:Release"
         runtime "Release"
         optimize "On"
         symbols "On"
-        defines { "RELEASE" }
+        defines { "_RELEASE","NDBUG" }
 
     filter "configurations:Dist"
         runtime "Release"
         optimize "On"
         symbols "Off"
-        defines { "DIST" }
+        defines { "_DIST","NDEBUG" }

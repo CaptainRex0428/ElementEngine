@@ -3,8 +3,6 @@ project "dlg"
 	language          "C++"       
 	cppdialect        "C++20"
                             
-	systemversion     "latest"
-
 	flags {
 		-- "NoRuntimeChecks",
 		-- "NoBufferSecurityCheck"
@@ -21,33 +19,33 @@ project "dlg"
 
 	includedirs      
     {
-        "include"
+        "dlg/include"
     }
 
 	files {
-		"src/**.c"		
+		"dlg/src/**.c"		
 	}
 		
-	--inlining    "Explicit"             -- General optimisation options.
+	--inlining    "Explicit"
 	--intrinsics  "Off"
 
 	filter "system:windows"
 		staticruntime "Off"
 		systemversion "latest"
-		defines {"WINDOWS"}
+		defines {"_WINDOWS"}
 
 	filter "configurations:Debug"
-		defines {"DEBUG"}
+		defines {"_DEBUG"}
 		runtime       "Debug"
 		symbols       "On"
 
 	filter "configurations:Release"
-		defines {"RELEASE"}
+		defines {"_RELEASE","NDEBUG"}
 		runtime       "Release"
 		optimize      "Speed"
 
 
 	filter "configurations:Dist"
-		defines {"Dist"}
+		defines {"_Dist","NDEBUG"}
 		runtime       "Release"
 		optimize      "On"
