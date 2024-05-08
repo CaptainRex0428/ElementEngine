@@ -1,0 +1,6 @@
+^L:\ENGINE\ENGINETEMPLATE\DEPENDENCIES\SDL_TTF\VISUALC\EXTERNAL\LIB\X64\LICENSE.FREETYPE.TXT
+copy L:\Engine\EngineTemplate\Dependencies\SDL_ttf\VisualC\external\lib\x64\LICENSE.freetype.txt L:\Engine\EngineTemplate\Dependencies\SDL_ttf\VisualC\\x64\Debug\
+^L:\ENGINE\ENGINETEMPLATE\DEPENDENCIES\SDL_TTF\VISUALC\EXTERNAL\LIB\X64\LICENSE.HARFBUZZ.TXT
+copy L:\Engine\EngineTemplate\Dependencies\SDL_ttf\VisualC\external\lib\x64\LICENSE.harfbuzz.txt L:\Engine\EngineTemplate\Dependencies\SDL_ttf\VisualC\\x64\Debug\
+^L:\ENGINE\ENGINETEMPLATE\DEPENDENCIES\SDL_TTF\VISUALC\EXTERNAL\LIB\X64\LICENSE.ZLIB.TXT
+copy L:\Engine\EngineTemplate\Dependencies\SDL_ttf\VisualC\external\lib\x64\LICENSE.zlib.txt L:\Engine\EngineTemplate\Dependencies\SDL_ttf\VisualC\\x64\Debug\
