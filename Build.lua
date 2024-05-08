@@ -31,7 +31,7 @@ group "Dependencies"
 
 	include "Dependencies/dlg.lua"
 	include "Dependencies/freetype.lua"
-	include "Dependencies/harfbuzz/harfbuzz.lua"
+	include "Dependencies/harfbuzz.lua"
 	include "Dependencies/SDL_ttf/SDL_ttf.lua"
 
 	include "Dependencies/spdlog.lua"
