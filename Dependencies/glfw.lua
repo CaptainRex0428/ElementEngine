@@ -31,7 +31,7 @@ project "glfw"
 	targetdir (TargetDir)
 	objdir (ObjectDir)
 
-    warnings "off"
+    -- warnings "off"
 
 	postbuildcommands
 	{

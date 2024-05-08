@@ -1,32 +1,32 @@
-project "Glad"
-    kind "StaticLib"
+project "glad"
+    kind "SharedLib"
     language "C"
 
     files
     {
-        "include/glad/glad.h",
-        "include/KHR/khrplatform.h",
-        "src/glad.c"
+        "glad/include/glad/glad.h",
+        "glad/include/KHR/khrplatform.h",
+        "glad/src/glad.c"
     }
 
     includedirs
     {
-        "include"
+        "glad/include"
     }
 
     location (LocationDir)
     targetdir (TargetDir)
     objdir (ObjectDir)
 
-    --postbuildcommands
-    --{
-     --("{COPY} %{cfg.buildtarget.relpath} "..DynamicDir)
-    --}
+    postbuildcommands
+    {
+     ("{COPY} %{cfg.buildtarget.relpath} "..DynamicDir)
+    }
 
   filter "system:windows"
     systemversion "latest"
     staticruntime "off"
-    defines{"_WINDOWS"}
+    defines{"_WINDOWS","_WIN64"}
 
 	
 	filter "configurations:Debug"
@@ -37,9 +37,9 @@ project "Glad"
 	filter "configurations:Release"
 		runtime "Release"
 		optimize "Speed"
-    defines{"NDEBUG"}
+    defines{"_RELEASE","NDEBUG"}
     
   filter "configurations:Dist"
     runtime "Release"
     optimize "on"
-    defines{"NDEBUG"}
+    defines{"_DIST","NDEBUG"}
