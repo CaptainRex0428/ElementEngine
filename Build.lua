@@ -19,7 +19,7 @@ group "Engine/Component"
 	include "ElementEditor/ElementEditor.lua"
 	include "ElementRuntime/ElementRuntime.lua"
 group "Engine/Extend"
-	include "Extend/ScrewExtend.lua"
+	include "Extend/libScrewExtend.lua"
 	
 group "Dependencies"
 	include "Dependencies/SDL.lua"

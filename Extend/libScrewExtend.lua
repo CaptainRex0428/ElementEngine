@@ -11,11 +11,13 @@ project "libScrewExtend"
 
     includedirs
     {
-        "ScrewExtend/include"
+        "ScrewExtend/include",
+        "%{DepIncludeDir.spdlog}"
     }
 
     links
     {
+        "spdlog.dll"
     }
 
     defines
