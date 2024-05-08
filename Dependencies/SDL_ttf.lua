@@ -10,7 +10,7 @@ project "SDL_ttf"
 
     includedirs
     {
-        "%{DepIncludeDir.SDL_ttf}",
+        "SDL_ttf",
         "%{DepIncludeDir.freetype}",
         "%{DepIncludeDir.harfbuzz}",
         "%{DepIncludeDir.SDL2}"
