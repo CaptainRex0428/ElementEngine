@@ -32,11 +32,11 @@ group "Dependencies"
 	include "Dependencies/dlg.lua"
 	include "Dependencies/freetype.lua"
 	include "Dependencies/harfbuzz.lua"
-	include "Dependencies/SDL_ttf/SDL_ttf.lua"
+	include "Dependencies/SDL_ttf.lua"
 
 	include "Dependencies/spdlog.lua"
 	
 group "Dependencies/Examples"
 	include "Dependencies/SDL_image/SDL_image_Example.lua"
 	include "Dependencies/dlg_example.lua"
-	include "Dependencies/SDL_ttf/SDL_ttf_Example.lua"
+	include "Dependencies/SDL_ttf_Example.lua"
