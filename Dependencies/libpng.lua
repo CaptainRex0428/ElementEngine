@@ -12,12 +12,18 @@ project "libpng"
 	includedirs      
     {
         "libpng",
+		"lib/libpng/",
         "%{DepIncludeDir.zlib}"
     }
 
 	links
 	{
 		"zlib"
+	}
+
+	defines
+	{
+		-- "PNG_WRITE_INT_FUNCTIONS_SUPPORTED"
 	}
 
 	files 
