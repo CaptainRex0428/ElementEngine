@@ -32,7 +32,7 @@ project "dlg"
 	filter "system:windows"
 		staticruntime "Off"
 		systemversion "latest"
-		defines {"_WINDOWS"}
+		defines {"_WINDOWS","_WIN64","DLG_WIN_CONSOLE"}
 
 	filter "configurations:Debug"
 		defines {"_DEBUG"}
