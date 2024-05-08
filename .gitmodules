@@ -13,3 +13,7 @@
 [submodule "Dependencies/imgui"]
 	path = Dependencies/imgui
 	url = https://github.com/ocornut/imgui.git
+[submodule "Dependencies/harfbuzz"]
+	path = Dependencies/harfbuzz
+	url = https://github.com/libsdl-org/harfbuzz.git
+	branch = 8.1.1-SDL
