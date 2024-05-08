@@ -1,5 +1,5 @@
-project "GLFW"
-	kind "StaticLib"
+project "glfw"
+	kind "SharedLib"
 	language "C"
 
 	files
@@ -33,10 +33,10 @@ project "GLFW"
 
     warnings "off"
 
-	--postbuildcommands
-	--{
-		--("{COPY} %{cfg.buildtarget.relpath} "..DynamicDir)
-	--}
+	postbuildcommands
+	{
+		("{COPY} %{cfg.buildtarget.relpath} "..DynamicDir)
+	}
 
 	filter "system:linux"
 		pic "On"
