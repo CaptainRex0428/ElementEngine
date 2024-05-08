@@ -21,7 +21,7 @@ group "Engine/Component"
 	include "ElementRuntime/ElementRuntime.lua"
 	
 group "Dependencies"
-	include "Dependencies/SDL2/SDL2.lua"
+	include "Dependencies/SDL.lua"
 	include "Dependencies/SDL_image.lua"
 	include "Dependencies/glad.lua"
 	include "Dependencies/glfw.lua"

@@ -11,13 +11,13 @@ project "showfont"
     includedirs
     {
         "%{DepIncludeDir.SDL_ttf}",
-        "%{DepIncludeDir.SDL2}"
+        "%{DepIncludeDir.SDL}"
     }
 
     links
     {
-        "SDL2",
-		"SDL2main",
+        "SDL",
+		"SDLmain",
         "SDL_ttf"
     }
 
@@ -80,13 +80,13 @@ project "glfont"
     includedirs
     {
         "%{DepIncludeDir.SDL_ttf}",
-        "%{DepIncludeDir.SDL2}"
+        "%{DepIncludeDir.SDL}"
     }
 
     links
     {
-        "SDL2",
-		"SDL2main",
+        "SDL",
+		"SDLmain",
         "SDL_ttf",
         "OpenGL32.lib"
     }

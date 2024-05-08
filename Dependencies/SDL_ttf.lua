@@ -13,15 +13,15 @@ project "SDL_ttf"
         "SDL_ttf",
         "%{DepIncludeDir.freetype}",
         "%{DepIncludeDir.harfbuzz}",
-        "%{DepIncludeDir.SDL2}"
+        "%{DepIncludeDir.SDL}"
     }
 
     links
     {
         "freetype",
         "harfbuzz",
-        "SDL2",
-		"SDL2main"
+        "SDL",
+		"SDLmain"
     }
 
     defines

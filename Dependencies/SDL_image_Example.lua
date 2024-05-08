@@ -8,14 +8,14 @@ project "showimage"
 
    includedirs
    {
-      "%{DepIncludeDir.SDL2}",
+      "%{DepIncludeDir.SDL}",
 	  "SDL_image/include"
    }
 
    links
    {
-      "SDL2",
-      "SDL2main",
+      "SDL",
+      "SDLmain",
 	  "SDL_image"
    }
 
@@ -54,14 +54,14 @@ project "showanim"
 	
 	   includedirs
 	   {
-		  "%{DepIncludeDir.SDL2}",
+		  "%{DepIncludeDir.SDL}",
 		  "SDL_image/include"
 	   }
 	
 	   links
 	   {
-		  "SDL2",
-		  "SDL2main",
+		  "SDL",
+		  "SDLmain",
 		  "SDL_image"
 	   }
 	

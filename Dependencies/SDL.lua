@@ -1,4 +1,4 @@
-project "SDL2"
+project "SDL"
 	language          "C++"           
 	cppdialect        "C++20"                      
 	
@@ -115,8 +115,7 @@ project "SDL2"
 			"setupapi",
 			"winmm",
 			"imm32",
-			"version",
-			"opengl32.lib"
+			"version"
 		}
 
 		postbuildcommands
@@ -158,7 +157,7 @@ project "SDL2"
 		optimize      "On"
 
 
-project "SDL2main"
+project "SDLmain"
 	kind          "StaticLib"
 	language      "C"
 	

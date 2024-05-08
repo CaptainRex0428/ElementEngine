@@ -1,5 +1,5 @@
 DepIncludeDir={}
-DepIncludeDir["SDL2"] = "%{wks.location}/Dependencies/SDL2/include"
+DepIncludeDir["SDL"] = "%{wks.location}/Dependencies/SDL/include"
 DepIncludeDir["SDL_image"] = "%{wks.location}/Dependencies/SDL_image/include"
 
 DepIncludeDir["glad"] = "%{wks.location}/Dependencies/glad/include"

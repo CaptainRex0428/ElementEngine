@@ -13,14 +13,14 @@ project "SDL_image"
 	{
 		"SDL_image/include", 
 		"lib/libpng/",
-		"%{DepIncludeDir.SDL2}",
+		"%{DepIncludeDir.SDL}",
 		"%{DepIncludeDir.libpng}"
 	}
 
 	links
 	{
-		"SDL2",
-		"SDL2main",
+		"SDL",
+		"SDLmain",
 		"libpng"
 	}
 
