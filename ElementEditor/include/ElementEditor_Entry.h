@@ -2,7 +2,7 @@
 
 #ifdef _WINDOWS
 
-extern Element::ElementEditor* Element::CreateApplication();
+// extern Element::ElementEditor* Element::CreateApplication();
 
 int main(int argc, char ** argv)
 {

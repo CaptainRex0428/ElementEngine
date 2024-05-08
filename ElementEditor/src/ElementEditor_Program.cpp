@@ -1,6 +1,7 @@
 #include "ElementEditor_Program.h"
 
-#include "Log/Log.h"
+#include "ScrewExtend.h"
+#include "ElementEditorMicroConfig.h"
 
 namespace Element
 {
@@ -15,5 +16,10 @@ namespace Element
 	void ElementEditor::Run()
 	{
 		ScrewExtend::Print();
+
+		ScrewExtend::Log::Init();
+
+		ELMG_TERMINAL_INFO("Termianl Logger LINKED!");
+		ELMG_CLIENT_WARN("Client Logger LINKED!");
 	}
 }

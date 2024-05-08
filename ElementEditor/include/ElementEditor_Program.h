@@ -2,7 +2,7 @@
 
 // -------------Element Used------------
 
-#include "ElementEditor_Definition.h"
+#include "ElementEditor_API.h"
 
 // -------------------------------------
 
@@ -17,5 +17,5 @@ namespace Element
 		virtual void Run();
 	};
 
-	ElementEditor* CreateApplication();
+	ENGINE_API ElementEditor* CreateApplication();
 }
