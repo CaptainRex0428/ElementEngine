@@ -26,7 +26,7 @@ group "Dependencies"
 	include "Dependencies/glad.lua"
 	include "Dependencies/glfw.lua"
 	include "Dependencies/imgui.lua"
-	include "Dependencies/libpng/libpng.lua"
+	include "Dependencies/libpng.lua"
 	include "Dependencies/zlib.lua"
 
 	include "Dependencies/dlg.lua"
