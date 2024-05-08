@@ -12,6 +12,7 @@ project "SDL_image"
 	includedirs
 	{
 		"SDL_image/include", 
+		"lib/libpng/",
 		"%{DepIncludeDir.SDL2}",
 		"%{DepIncludeDir.libpng}"
 	}
