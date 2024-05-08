@@ -7,3 +7,6 @@
 [submodule "Dependencies/glfw"]
 	path = Dependencies/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "Dependencies/dlg"]
+	path = Dependencies/dlg
+	url = https://github.com/nyorain/dlg.git
