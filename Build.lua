@@ -16,7 +16,6 @@ workspace "ElementEngine"
 group "Engine"
 	include "ElementEngine/ElementEngine.lua"
 group "Engine/Component"
-	include "ElementExtend/ElementExtend.lua"
 	include "ElementEditor/ElementEditor.lua"
 	include "ElementRuntime/ElementRuntime.lua"
 	
