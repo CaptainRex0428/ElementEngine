@@ -16,7 +16,7 @@ project "ElementEditor"
 
     links
     {
-        "ScrewExtend.dll"
+        "ScrewExtend"
     }
 
     defines
