@@ -2,15 +2,8 @@ project "SDL_image"
 	kind          "StaticLib"
 	language          "C++"            
 	cppdialect        "C++20"
-                            
-	systemversion     "latest"
 
-	flags {
-		              "NoRuntimeChecks", -- Only used on Visual Studio.
-		              "NoBufferSecurityCheck"
-	}
-
-	vectorextensions  "SSE"               -- Necessary to run x32.
+	-- vectorextensions  "SSE"
 
 	location (LocationDir)
 	targetdir (TargetDir)
@@ -18,7 +11,7 @@ project "SDL_image"
 
 	includedirs
 	{
-		"include", 
+		"SDL_image/include", 
 		"%{DepIncludeDir.SDL2}",
 		"%{DepIncludeDir.libpng}"
 	}
@@ -30,18 +23,23 @@ project "SDL_image"
 		"libpng"
 	}
 
-	files {
-		"include/*.h",					
-		"src/**.h",						"src/**.c",		
+	defines
+	{
+		"LOAD_PNG",
+		"LOAD_TGA"
 	}
 
+	files {
+		"SDL_image/include/*.h",					
+		"SDL_image/src/**.h",						"SDL_image/src/**.c",		
+	}
 
 	-- inlining          "Explicit"
 	-- intrinsics        "Off"
 
 	filter "system:windows"
 		staticruntime "off"
-		systemversion	  "latest"
+		systemversion "latest"
 		defines {"_WINDOWS"}
 		links 
 		{
@@ -53,17 +51,17 @@ project "SDL_image"
 		
 
 	filter "configurations:Debug"
-		defines {"DEBUG"}
+		defines {"_DEBUG"}
 		runtime       "Debug"
 		symbols       "On"
 
 	filter "configurations:Release"
-		defines {"RELEASE"}
+		defines {"_RELEASE","NDEBUG"}
 		runtime       "Release"
 		optimize      "Speed"
 
 
 	filter "configurations:Dist"
-		defines {"Dist"}
+		defines {"_Dist","NDEBUG"}
 		runtime       "Release"
 		optimize      "On"

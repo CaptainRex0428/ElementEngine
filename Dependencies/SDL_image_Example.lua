@@ -4,12 +4,12 @@ project "showimage"
    cppdialect "C++20"
    staticruntime "off"
 
-   files { "examples/showimage.c"}
+   files { "SDL_image/examples/showimage.c"}
 
    includedirs
    {
       "%{DepIncludeDir.SDL2}",
-	  "%{DepIncludeDir.SDL_image}"
+	  "SDL_image/include"
    }
 
    links
@@ -25,21 +25,21 @@ project "showimage"
 
    filter "system:windows"
        systemversion "latest"
-       defines { "WINDOWS" }
+       defines { "_WINDOWS" }
 
    filter "configurations:Debug"
-       defines { "DEBUG" }
+       defines { "_DEBUG" }
        runtime "Debug"
        symbols "On"
 
    filter "configurations:Release"
-       defines { "RELEASE" }
+       defines { "_RELEASE","NDEBUG" }
        runtime "Release"
        optimize "Speed"
        symbols "On"
 
    filter "configurations:Dist"
-       defines { "DIST" }
+       defines { "_DIST","NDEBUG" }
        runtime "Release"
        optimize "On"
        symbols "Off"
@@ -50,12 +50,12 @@ project "showanim"
 	   cppdialect "C++20"
 	   staticruntime "off"
 	
-	   files { "examples/showanim.c"}
+	   files { "SDL_image/examples/showanim.c"}
 	
 	   includedirs
 	   {
 		  "%{DepIncludeDir.SDL2}",
-		  "%{DepIncludeDir.SDL_image}"	  
+		  "SDL_image/include"
 	   }
 	
 	   links
@@ -71,21 +71,21 @@ project "showanim"
 	
 	   filter "system:windows"
 		   systemversion "latest"
-		   defines { "WINDOWS" }
+		   defines { "_WINDOWS" }
 	
 	   filter "configurations:Debug"
-		   defines { "DEBUG" }
+		   defines { "_DEBUG" }
 		   runtime "Debug"
 		   symbols "On"
 	
 	   filter "configurations:Release"
-		   defines { "RELEASE" }
+		   defines { "_RELEASE","NDEBUG" }
 		   runtime "Release"
 		   optimize "Speed"
 		   symbols "On"
 	
 	   filter "configurations:Dist"
-		   defines { "DIST" }
+		   defines { "DIST","NDEBUG" }
 		   runtime "Release"
 		   optimize "On"
 		   symbols "Off"
