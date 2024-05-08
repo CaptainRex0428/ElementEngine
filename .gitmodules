@@ -31,3 +31,7 @@
 	path = Dependencies/SDL_image
 	url = https://github.com/libsdl-org/SDL_image.git
 	branch = SDL2
+[submodule "Dependencies/SDL"]
+	path = Dependencies/SDL
+	url = https://github.com/libsdl-org/SDL.git
+	branch = SDL2
