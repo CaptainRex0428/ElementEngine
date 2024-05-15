@@ -15,11 +15,12 @@ namespace Element
 
 	void ElementEditor::Run()
 	{
-		ScrewExtend::Print();
 
-		ScrewExtend::Log::Init();
+		ScrewExtend::Init();
 
 		ELMG_TERMINAL_INFO("Termianl Logger LINKED!");
 		ELMG_CLIENT_WARN("Client Logger LINKED!");
+
+		ScrewExtend::Trace::Start();
 	}
 }
