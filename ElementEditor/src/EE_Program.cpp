@@ -1,7 +1,7 @@
-#include "ElementEditor_Program.h"
+#include "EE_Program.h"
 
 #include "ScrewExtend.h"
-#include "ElementEditorMicroConfig.h"
+#include "EE_Micro.h"
 
 namespace Element
 {

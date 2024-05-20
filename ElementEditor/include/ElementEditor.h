@@ -2,13 +2,13 @@
 
 // -------------Element Used------------
 
-#include "ElementEditor_Program.h"
+#include "EE_Program.h"
 
 // -------------------------------------
 
 // -------------Entry Point------------
 
-#include "ElementEditor_Entry.h"
+#include "EE_Entry.h"
 
 // ------------------------------------
 
