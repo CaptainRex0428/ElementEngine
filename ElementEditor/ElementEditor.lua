@@ -12,13 +12,15 @@ project "ElementEditor"
     {
         "include",
         "%{ProjIncludeDir.ScrewExtend}",
-        "%{DepIncludeDir.spdlog}"
+        "%{DepIncludeDir.spdlog}",
+        "%{DepIncludeDir.glfw}"
     }
 
     links
     {
         "ScrewExtend",
-        "spdlog"
+        "spdlog",
+        "glfw"
     }
 
     defines
